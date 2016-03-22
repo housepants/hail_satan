@@ -3,12 +3,11 @@
 	"description": "This Chrome Extension takes the veil off your eyes.",
 	"version": "1.0",
 	"manifest_version": 2,
-	"icon": {
-		"16": "img/icon16.png"
-		"48": "img/icon48.png"
+	"icons": {
+		"16": "img/icon16.png",
+		"48": "img/icon48.png",
 		"128": "img/icon128.png"
 			},
-	"default_title": "Hail Satan",
 	"content_scripts": [
 	{
 		"matches":["https://www.facebook.com/*", "http://www.facebook.com/*"],
