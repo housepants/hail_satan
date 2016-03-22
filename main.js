@@ -1,8 +1,5 @@
-/* Facebook Hashtag Remover
- * Author: 	Samuel Jackson (slj11@aber.ac.uk)
- * Author: 	David Murdoch (david@davidmurdoch.com)
- * Date: 	2013-04-22
- * Description: A Google Chrome extension to remove annoying Hashtags from Facebook.
+/* Hail Satan
+ * Description: A Google Chrome extension that changes all Facebook hashtags to "#hailsatan".
  * This script will currently remove hashtags from both news feed, timeline posts, comments, and captions.
  */
 
@@ -11,7 +8,7 @@
     function removeHashtags(obj) {
         obj.each(function() {
             var original = this.nodeValue,
-                cleaned = original.replace(/#\w+/g, "");
+                cleaned = original.replace(/#\w+/g, "#hailsatan");
             if ( original !== cleaned ) {
                 this.nodeValue = cleaned;
             }
